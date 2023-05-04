@@ -1,7 +1,6 @@
 import Web3 from "web3";
 const web3 = new Web3('https://mainnet.bitonechain.com/');
 
-
 async function getBlockInfo() {
     try {
         const blockNumber = await web3.eth.getBlockNumber(); // 최신 블록 번호 가져오기
@@ -58,4 +57,4 @@ async function getBlockInfo() {
       console.error(error);
     }
 }
-getLatestBlockInfo();
+getBlockInfo();
