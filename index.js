@@ -95,7 +95,7 @@ async function getBlockInfo() {
                     txBioInfo.fromAddr = tx.from;
                     txBioInfo.toAddr = tx.to;
                     txBioInfo.gasPrice = web3.utils.fromWei(gasFee.toString(), 'ether');
-                    txBioInfo.tokenContractAddr = "ETH";
+                    txBioInfo.tokenContractAddr = "BIO";
                     txBioInfo.coinVolume = web3.utils.fromWei(tx.value.toString(), 'ether');
                     console.log(txBioInfo);
                     const client = new kafka.KafkaClient({ kafkaHost: '59.10.9.149:9092' });
